@@ -20,7 +20,6 @@ namespace MahasiswaAPI.Controllers
             return mahasiswaList;
         }
 
-        // GET: api/mahasiswa/{index}
         [HttpGet("{index}")]
         public ActionResult<Mahasiswa> GetMahasiswaByIndex(int index)
         {
@@ -31,7 +30,6 @@ namespace MahasiswaAPI.Controllers
             return mahasiswaList[index];
         }
 
-        // POST: api/mahasiswa
         [HttpPost]
         public ActionResult AddMahasiswa([FromBody] Mahasiswa mahasiswaBaru)
         {
@@ -39,7 +37,6 @@ namespace MahasiswaAPI.Controllers
             return Ok();
         }
 
-        // DELETE: api/mahasiswa/{index}
         [HttpDelete("{index}")]
         public ActionResult DeleteMahasiswa(int index)
         {
